@@ -9,7 +9,7 @@ def index(request):
 
 
 @login_required
-def about(request):
-   return render(request, 'about.html')
+def add(request):
+   return render(request, 'add.html')
 
 # Create your views here.
