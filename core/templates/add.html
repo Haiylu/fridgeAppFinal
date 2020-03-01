@@ -4,5 +4,9 @@
 
 {% block content %}
   <h2>Add Items</h2>
-  <p>This is a sample secondary page which also requires authentication.</p>
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+  </form>
 {% endblock %}
